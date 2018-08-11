@@ -88,7 +88,7 @@ def checkout(cart, coupons)
 
   prices = []
 
-  cart_with_clearance.each do |item, item_info|
+  cart.each do |item, item_info|
     item_info.each do |key, value|
       prices << item_info[:price]
     end
