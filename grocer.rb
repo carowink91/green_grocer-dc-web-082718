@@ -89,10 +89,7 @@ def checkout(cart, coupons)
   price = 0
 
   cart.each do |item, item_info|
-  end
     binding.pry
-    price +=
-    end
   end
 
   prices
