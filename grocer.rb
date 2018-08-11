@@ -99,5 +99,5 @@ def checkout(cart, coupons)
   else
     final_price = price
   end
-  discount_sum
+  final_price
 end
