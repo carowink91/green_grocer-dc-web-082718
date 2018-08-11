@@ -105,5 +105,8 @@ def checkout(cart, coupons)
   sum
   if sum > 100
     discount_sum = sum * 0.9
+  else
+    discount_sum = sum
+  end
   binding.pry
 end
