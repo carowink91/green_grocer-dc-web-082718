@@ -82,11 +82,11 @@ end
 
 
 def checkout(cart, coupons)
-  cart = consolidate_cart(cart)
-  cart = apply_coupons(cart, coupons)
-  cart = apply_clearance(cart)
+  consolidated = consolidate_cart(cart)
+  couponed = apply_coupons(cart, coupons)
+  clearanced = apply_clearance(cart)
 
-  prices = []
+  price = 0
 
   cart.each do |item, item_info|
     item_info.each do |key, value|
