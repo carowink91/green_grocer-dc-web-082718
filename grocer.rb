@@ -92,17 +92,10 @@ def checkout(cart, coupons)
     price += item_info[:count] * item_info[:price]
   end
 
-  prices
-  sum = 0
-  i = 0
+  price
 
-  while i < prices.length
-    sum += prices[i]
-    i += 1
-  end
-  sum
-  if sum > 100
-    discount_sum = sum * 0.9
+  if price > 100
+    final_price = price * 0.9
   else
     discount_sum = sum
   end
